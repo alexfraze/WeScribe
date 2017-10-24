@@ -105,6 +105,7 @@ function saveBackgroundColor(url, color) {
 // user devices.
 document.addEventListener('DOMContentLoaded', () => {
   getCurrentTabUrl((url) => {
+    console.log(url)
     var dropdown = document.getElementById('dropdown');
 
     // Load the saved background color for this page and modify the dropdown
