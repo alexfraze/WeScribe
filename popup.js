@@ -109,6 +109,5 @@ document.addEventListener('DOMContentLoaded', () => {
       alert("you are watching netflix")  
     }
     alert("not netflix")
-    var dropdown = document.getElementById('dropdown');
   });
 });

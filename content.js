@@ -1,1 +1,1 @@
-alert("you are watching netflix")  
+alert("start timing netflix usage")  
