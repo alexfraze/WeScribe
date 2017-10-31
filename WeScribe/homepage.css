@@ -58,9 +58,10 @@ a {
 .summary {
 	border-radius: 10px;
 	background-color: #ffffff;
-	width: 23%;
+	width: 30%;
 	height: 40%;
 	padding: 12px 30px;
+
 }
 
 .current-bal p {
