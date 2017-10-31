@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "WeScribeA",
+  "name": "WeScribe",
   "description": "This extension tracks user usage.",
   "version": "1.0",
 
@@ -28,10 +28,6 @@
         "js": ["content.js"],
         "run_at": "document_start"         // pay attention to this line
         }
-    ],
-
-  "background": {
-    "scripts": ["background.js"]
-  }
+    ]
 
 }

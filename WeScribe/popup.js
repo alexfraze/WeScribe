@@ -108,6 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if(url.startsWith("https://www.netflix.com/watch")){
       alert("you are watching netflix")  
     }
-    alert("not netflix")
+  /*  alert("not netflix")*/
   });
 });
