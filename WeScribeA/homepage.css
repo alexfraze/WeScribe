@@ -80,12 +80,7 @@ a {
 .summary-viz {
 	clear: both;
 	margin-top: 5%;
-	float: right
-}
-
-.visualization{
-	float: right;
-	width: 1800px;
+	width: 300px;
 }
 
 .orange {
