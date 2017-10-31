@@ -6,38 +6,92 @@
  -->
 <html>
   <head>
-    <title>Getting Started Extension's Popup</title>
-    <style type="text/css">
-      body {
-        margin: 10px;
-        white-space: nowrap;
-      }
+    <title>WeScribe</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="homepage.css">
 
-      h1 {
-        font-size: 15px;
-      }
-
-      #container {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-      }
-    </style>
-
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-    -->
     <script src="popup.js"></script>
   </head>
 
   <body>
-    <h1>Media Hub</h1>
-    <div id="container">
-      <span>Choose a color</span>
-      <button type="button" >Click Me!</button>
-    </div>
+    <wrapper>
+      <header> 
+        <a href="javascript:void(0);"><img src="images/home.png" class="nav-icon"/></a>
+        <a href="javascript:void(0);"><img src="images/coin.png" class="nav-icon"/></a>
+        <a href="javascript:void(0);"><img src="images/user.png" class="nav-icon"/></a>
+      </header>
+      
+      <div class="main-content">
+        <div class="accounts-div">
+          <h2> Accounts </h2>
+          <div class="account">
+            <img src="images/netflix.png" />
+            <div class="acct-description">
+              <div class="button">
+                <a href="javascript:void(0);" class="orange"> Go to Netflix </a>
+              </div>
+              <p> <a href="javascript:void(0);" class="white"> View details </a></p>
+            </div>
+          </div>
+          <div class="account">
+            <img src="images/spotify.jpg" />
+            <div class="acct-description">
+              <div class="button">
+                <a href="javascript:void(0);" class="orange"> Go to Spotify </a>
+              </div>
+              <p> <a href="javascript:void(0);" class="white"> View details </a></p>
+            </div>
+          </div>
+          <div class="account">
+            <img src="images/hulu.jpg" />
+            <div class="acct-description">
+              <div class="button">
+                <a href="javascript:void(0);" class="orange"> Go to Hulu </a>
+              </div>
+              <p> <a href="javascript:void(0);" class="white"> View details </a></p>
+            </div>
+          </div>
+
+          <!-- <div class="account">
+            <img src="" />
+            <div class="acct-description">
+              <div class="button">
+                <a href="javascript:void(0);" class="orange"> Go to Netflix </a>
+                <p> <a href="javascript:void(0);"> View details </a></p>
+              </div>
+            </div>
+          </div> -->
+        </div> <!-- end .accounts -->
+
+        <div class="usage">
+          <h2> Usage </h2>
+          <div class="summary">
+            <div class="current-bal">
+              <h3> Current Balance </h3>
+                <div class="usage-label"> 
+                  <p> Netflix </p>
+                  <p> Spotify </p>
+                  <p> Hulu </p>
+                  <p> Apple Music </p>
+                </div>
+                <div class="usage-price">
+                  <p> $4.43</p>
+                  <p> $2.29</p>
+                  <p> $3.81</p>
+                  <p> $2.08</p>
+                </div>
+            </div>
+            <div class="summary-viz">
+              <br/> 
+              <h3> My Usage Summary </h3>
+            </div>
+          </div>
+          <div class="visualization">
+          </div>
+        </div> <!-- end .usage -->
+      </div><!-- end .main-content -->
+
+    </wrapper>
+
   </body>
 </html>
