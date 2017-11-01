@@ -61,7 +61,7 @@ a {
 	width: 30%;
 	height: 40%;
 	padding: 12px 30px;
-
+	float: left;
 }
 
 .current-bal p {
@@ -81,7 +81,7 @@ a {
 .summary-viz {
 	clear: both;
 	margin-top: 5%;
-	width: 300px;
+	width: 100%
 }
 
 .orange {
@@ -90,4 +90,19 @@ a {
 
 .white {
 	color: #ffffff;
+}
+
+
+.group-usage{
+	border-radius: 10px;
+	float: right;
+	background-color: #ffffff;
+	width: 55%;
+	padding: 12px 30px;
+	padding-right: 20px;
+
+}
+
+#data_viz{
+	max-width: 100%
 }

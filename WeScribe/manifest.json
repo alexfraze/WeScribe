@@ -6,17 +6,18 @@
   "version": "1.0",
 
   "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
+    "default_icon": "icon.png"
+ /*   "default_popup": "popup.html" */
+   },
 
-  "chrome_url_overrides" : {
+  /*"chrome_url_overrides" : {
     "newtab": "popup.html"
-  },
+  },*/
 
   "permissions": [
     "activeTab",
-    "storage"
+    "storage",
+    "tabs"
   ],
 
 
@@ -28,6 +29,8 @@
         "js": ["content.js"],
         "run_at": "document_start"         // pay attention to this line
         }
-    ]
+    ],
+
+    "background": { "scripts": [ "background.js" ] }
 
 }

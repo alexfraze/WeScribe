@@ -1,3 +1,5 @@
-chrome.webNavigation.onHistoryStateUpdated.addListener(function(details) {
-    chrome.tabs.executeScript(null,{file:"contentscript.js"});
+chrome.browserAction.onClicked.addListener(function(activeTab)
+{
+    var newURL = "popup.html";
+    chrome.tabs.create({ url: newURL });
 });
