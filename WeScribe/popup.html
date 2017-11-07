@@ -11,6 +11,9 @@
     <link rel="stylesheet" type="text/css" href="homepage.css">
 
     <script src="popup.js"></script>
+    <script src="highcharts.js"></script>
+    <script src="series-label.js"></script>
+    <script src="exporting.js"></script>
   </head>
 
   <body>
@@ -83,14 +86,28 @@
             </div>
             <div class="summary-viz">
               <br/> 
-              <h3> Usage Summary </h3>
-              <img src="images/data_viz.png" id="data_viz">
+             <div class="current-bal">
+              <h3> Current Month Usage</h3>
+                <div class="usage-label"> 
+                  <p> Netflix </p>
+                  <p> Spotify </p>
+                  <p> Hulu </p>
+                  <p> Apple Music </p>
+                </div>
+                <div class="usage-price">
+                  <p> 6 hours</p>
+                  <p> 15 hours </p>
+                  <p> None </p>
+                  <p> 2 Hours </p>
+                </div>
+            </div>
+              <!-- <img src="images/data_viz.png" id="data_viz"> -->
             </div>
           </div>
 
           <div class="group-usage">
           <h2>Group Usage</h2>
-              <img src="images/group_data_viz.png" id="data_viz">
+              <div id="container"></div>
           </div>
      
         </div> <!-- end personal .usage -->
@@ -108,12 +125,17 @@
           </div>
       </div>
  -->
-
+            <script type="text/javascript", src="my_highchart.js">
+      </script>
 
 
       </div><!-- end .main-content -->
 
     </wrapper>
+
+
+
+
 
   </body>
 </html>
