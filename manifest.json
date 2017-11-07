@@ -26,8 +26,9 @@
         "matches": [
             "https://www.netflix.com/*"
             ],
-        "js": ["js/content.js", "js/my_highchart.js", "js/highcharts.js",
-          "js/series-label.js", "js/exporting.js"],
+        "js": ["js/content.js"],
+        /*  , "js/my_highchart.js", "js/highcharts.js",
+          "js/series-label.js", "js/exporting.js"*/
         "run_at": "document_start"         // pay attention to this line
         }
     ],
