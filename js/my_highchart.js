@@ -2,7 +2,6 @@
 $.ajax({
                 type: "Get",
                 url: "http://localhost:5000/usage/",
-                data: {},
                 success: function(result) {
                    callback(result)
                 },
@@ -15,9 +14,7 @@ $.ajax({
 // work with erin to figure out API data format.
 function callback(result) {
     var data = result;
-    for(var i=0; i< data.length; i++){
-        console.log(data[i].start);
-    }
+    console.log(data);
     API_data =[
         {
                 name: 'Alex',
