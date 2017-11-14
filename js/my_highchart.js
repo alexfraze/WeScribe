@@ -64,7 +64,20 @@ function callback(result) {
             ]
 
 
+
     Highcharts.chart('container', {
+    credits: {
+        enabled: false
+    },
+
+    exporting: {
+        enabled: false
+    },
+
+    subtitle: {
+        text: 'Year 2017'
+    },
+
 
         title: {
             text: 'My Group Netflix Usage'
