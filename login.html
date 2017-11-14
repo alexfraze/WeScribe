@@ -1,0 +1,31 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>WeScribe</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="login.css">
+
+
+  </head>
+
+  <body>
+    <wrapper>
+      <div class="login-div">
+        <h3 id="login-text"> Login </h3>
+        <p> Username </p>
+        <input type="text" name="username">
+        <p> Password </p>
+        <input type="password" name="password"> <br/>
+        <input type="submit" value="Submit">
+
+      </div>
+
+    </wrapper>
+
+  </body>
+</html>
