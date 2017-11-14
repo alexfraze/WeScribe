@@ -55,6 +55,14 @@ Highcharts.chart('container', {
         text: 'My Group Netflix Usage'
     },
 
+    credits: {
+        enabled: false
+    },
+
+    exporting: {
+        enabled: false
+    },
+
     subtitle: {
         text: 'Year 2017'
     },
