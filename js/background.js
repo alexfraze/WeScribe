@@ -1,5 +1,8 @@
-chrome.browserAction.onClicked.addListener(function(activeTab)
-{
-    var newURL = "popup.html";
-    chrome.tabs.create({ url: newURL });
+chrome.tabs.query({
+  active: true,
+  currentWindow: true
+}, function(tabs) {
+  var tab = tabs[0];
+  var url = tab.url;
+  console.log(url)
 });
