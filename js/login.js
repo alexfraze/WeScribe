@@ -1,4 +1,15 @@
 $(function() {
+
+	$("#sign-up").click( function() {
+		$(".login-div").hide();
+		$(".signup-div").show();
+	});
+
+	$("#login").click( function() {
+		$(".login-div").show();
+		$(".signup-div").hide();
+	});
+
 	//on submit check if valid or not
 	$("#submit").click(function(e) {
 	    e.preventDefault();
@@ -21,3 +32,6 @@ $(function() {
 
 
 });
+
+
+
