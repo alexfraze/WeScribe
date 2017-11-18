@@ -1,0 +1,25 @@
+#my-groups {
+	float: left;
+}
+
+#new-group {
+	width: 7%;
+	float: right;
+	height: 10%;
+	padding: 0.7% 1%;
+	margin: 0;
+	margin-bottom: 2%;
+}
+
+.accounts-row {
+	clear: both;
+}
+
+.acct-description {
+	text-align: left;
+	padding: 0% 1%;
+}
+
+.new-group-form {
+	display: none;
+}
