@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+  <head>
+    <title>WeScribe</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+    <link rel="stylesheet" type="text/css" href="account.css">
+    
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/account.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/series-label.js"></script>
+    <script src="js/exporting.js"></script>
+  </head>
+
+  <body>
+    <wrapper>
+      <header> 
+        <a href="popup.html"><img src="images/home.png" class="nav-icon"/></a>
+        <a href="javascript:void(0);"><img src="images/coin.png" class="nav-icon"/></a>
+        <a href="account.html"><img src="images/user.png" class="nav-icon"/></a>
+      </header>
+      
+      <div class="main-content">
+        <div class="accounts-div">
+          <h2 id="my-groups"> My Groups </h2>
+          <div class="button" id="new-group">
+            <a href="javascript:void(0);" class="orange" > New Group </a>
+          </div>
+          <div class="accounts-row">
+            <div class="account">
+              <img src="images/netflix.png" />
+              <div class="acct-description white" >
+                <h2> House Netflix </h2>
+                <p> Username: johnny </p>
+                <p> <a href="javascript:void(0);" class="white"> Password: ********* </a></p>
+              </div>
+            </div>
+            
+          </div> <!-- end .accounts-row -->
+        </div> <!-- end .accounts -->
+
+        <div class="new-group-form">
+          <h3 id="login-text"> New Group</h3>
+          <p> Group Name </p>
+          <input type="text" name="groupname" id="group-name">
+          <p> Users </p>
+          <input type="text" name="users" id="users">
+          <p> Subscription Cost</p>
+          <input type="text" name="cost" id="cost">
+          <p> Payment Due Date </p>
+          <input type="text" name="payment-date" id="payment-date">
+          <p> Subscription Username </p>
+          <input type="text" name="username" id="username">
+          <p> Subscription Password </p>
+          <input type="password" name="password" id="password"> <br/> <br/>
+          <input type="submit" value="Submit" id="submit">
+        </div>
+
+        <div class="usage">
+          <h2> Group Usage </h2>
+          <div class="summary">
+            <div class="current-bal">
+              <h3> Current Balance </h3>
+                <div class="usage-label"> 
+                  <p> Erin </p>
+                  <p> Sally </p>
+                  <p> Alex </p>
+                </div>
+                <div class="usage-price">
+                  <p> $4.43</p>
+                  <p> $2.29</p>
+                  <p> $3.81</p>
+                </div>
+            </div>
+            <div class="summary-viz">
+              <br/> 
+             <div class="current-bal">
+              <h3> Current Month Usage</h3>
+                <div class="usage-label"> 
+                  <p> Erin </p>
+                  <p> Sally </p>
+                  <p> Alex </p>
+                </div>
+                <div class="usage-price">
+                  <p> 6 hours</p>
+                  <p> 15 hours </p>
+                  <p> None </p>
+                </div>
+            </div>
+              <!-- <img src="images/data_viz.png" id="data_viz"> -->
+            </div>
+          </div>
+
+          <div class="group-usage">
+          <h2>Group Usage</h2>
+              <div id="container"></div>
+          </div>
+     
+        </div> <!-- end personal .usage -->
+
+
+            <script type="text/javascript", src="js/my_highchart.js">
+      </script>
+
+
+      </div><!-- end .main-content -->
+
+    </wrapper>
+
+
+
+
+
+  </body>
+</html>
