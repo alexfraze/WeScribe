@@ -70,7 +70,7 @@ chrome.tabs.onUpdated.addListener(function() {
 
 });
 
-
+/*
 
 chrome.tabs.onRemoved.addListener(function() {
 	chrome.tabs.query({
@@ -81,7 +81,7 @@ chrome.tabs.onRemoved.addListener(function() {
 	  var url = tab.url;
 	  var regexObj =  /netflix\.com/
 	  if(url!== currURL){
-
+*/
 
 
 
