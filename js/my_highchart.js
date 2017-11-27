@@ -1,4 +1,3 @@
-
 $.ajax({
                 type: "Get",
                 url: "http://localhost:5000/usage/",
