@@ -26,12 +26,11 @@
         "matches": [
             "https://www.netflix.com/*"
             ],
-        "js": ["js/jquery-3.2.1.js", "js/content.js", "js/my_highchart.js", "js/highcharts.js",
-          "js/series-label.js", "js/exporting.js"],
+        "js": ["js/jquery-3.2.1.js","js/login.js", "js/content.js", "js/my_highchart.js", "js/highcharts.js", "js/series-label.js", "js/exporting.js", "js/account.js"],
         "run_at": "document_start"         // pay attention to this line
         }
     ],
 
-    "background": { "scripts": [ "js/background.js" ] }
+    "background": { "scripts": [ "js/jquery-3.2.1.js", "js/background.js"] }
 
 }
