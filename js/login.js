@@ -32,6 +32,7 @@ $(function() {
 	});
 
 	function loginSucess(result){
+		localStorage.user = result.user
 		window.location.href = './popup.html';
 	}
 

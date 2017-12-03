@@ -7,8 +7,14 @@ var netflix_open = false
 
 chrome.browserAction.onClicked.addListener(function(activeTab)
 {
-    var newURL = "login.html";
-    chrome.tabs.create({ url: newURL });
+	// If user has logged in before their id is in local storage
+	if (localStorage.user === undefined){
+	    var newURL = "login.html";
+	    chrome.tabs.create({ url: newURL });
+	 } else {
+	 	var newURL = "popup.html";
+ 		chrome.tabs.create({ url: newURL });
+	 }
 });
 
 
@@ -35,11 +41,11 @@ function check_if_netflix_is_open(callback_netflix_open){
 }
 
 
-chrome.browserAction.onClicked.addListener(function(activeTab)
-{
-	var newURL = "popup.html";
-	chrome.tabs.create({ url: newURL });
-});
+// chrome.browserAction.onClicked.addListener(function(activeTab)
+// {
+// 	var newURL = "popup.html";
+// 	chrome.tabs.create({ url: newURL });
+// });
 
 
 chrome.tabs.onUpdated.addListener(function() {
