@@ -20,7 +20,7 @@
     API_data =[
     {
         name: 'Alex',
-        data: [0, 12, 15, 17 ,0]
+        data: [0, 12.3, 15.1, 17 , 0]
     },
     {
         name: "Sally",
@@ -28,7 +28,7 @@
     },
     {
         name: "Erin",
-        data: [8.9, 4.2, 4.7, 8.5, 3]
+        data: [8.9, 4.2, 4.7, 8.5, 3.0]
     }]
 
 
@@ -38,7 +38,7 @@ Highcharts.chart('container', {
         type: 'line'
     },
     title: {
-        text: 'Previous Billing Cycle Netflix Usage'
+        text: 'Weekly Netflix Usage'
     },
     subtitle: {
         text: 'November 2017' 
@@ -59,7 +59,25 @@ Highcharts.chart('container', {
             enableMouseTracking: false
         }
     },
-    series: API_data
+    series: API_data,
+
+
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom'
+                }
+            }
+        }]
+    }
+
+
 });
 
 
