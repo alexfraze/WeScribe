@@ -43,7 +43,7 @@ chrome.browserAction.onClicked.addListener(function(activeTab)
 
 
 chrome.tabs.onUpdated.addListener(function() {
-	console.log("tab updated")
+	/*console.log("tab updated")*/
 	chrome.tabs.query({
 	  active: true,
 	  currentWindow: true
@@ -59,7 +59,7 @@ chrome.tabs.onUpdated.addListener(function() {
 			var stop = Date.now();
 			var dateString = stop.toString();
 			watching_flag = false;
-			console.log("netflix url was changed: update api")
+			/*console.log("netflix url was changed: update api")*/
 			$.ajax({
 					type: "Put",
 					url: "http://localhost:5000/usage/" + responseid + "/" + dateString,
@@ -80,7 +80,7 @@ chrome.tabs.onUpdated.addListener(function() {
 		var start = Date.now();
 		var dateString = start.toString();
 		watching_flag = true;
-		console.log("netflix url was opened: update api")
+		/*console.log("netflix url was opened: update api")*/
 		$.ajax({
 				type: "Post",
 				url: "http://localhost:5000/usage/" + dateString,
@@ -102,7 +102,7 @@ chrome.tabs.onUpdated.addListener(function() {
 
 
 chrome.tabs.onRemoved.addListener(function() {
-	console.log("tab closed")
+	/*console.log("tab closed")*/
 	if(watching_flag==true){
 		check_if_netflix_is_open(function(return_from_netflix_open){
 		if(return_from_netflix_open==false){
