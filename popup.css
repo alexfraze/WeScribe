@@ -40,8 +40,13 @@ a {
 	display: inline-block;
 	margin: 0% auto;
 	background-color: #666666;
+	border-radius: 10px;
 	height: 120px;
 	margin-right: 5%;
+}
+
+.acct-img {
+	/*padding-left: 2px;*/
 }
 
 .acct-description {
@@ -49,6 +54,14 @@ a {
 	width: 64%;
 	padding: 6% 1%;
 	text-align: center;
+}
+
+.payment {
+	border-radius: 10px;
+	background-color: #ffffff;
+	width: 55%;
+	float: right;
+	padding: 12px 30px;
 }
 
 .usage {
@@ -100,9 +113,11 @@ a {
 	width: 55%;
 	padding: 12px 30px;
 	padding-right: 20px;
-
 }
 
+#new-group {
+	background-color: #ff8c61;
+}
 
 #container {
 	min-width: 310px;

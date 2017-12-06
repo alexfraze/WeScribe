@@ -8,7 +8,7 @@
   <head>
     <title>WeScribe</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="homepage.css">
+    <link rel="stylesheet" type="text/css" href="popup.css">
     
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/login.js"></script>
@@ -23,49 +23,48 @@
       <header> 
         <a href="javascript:void(0);"><img src="images/home.png" class="nav-icon"/></a>
         <a href="javascript:void(0);"><img src="images/coin.png" class="nav-icon"/></a>
-        <a href="account.html"><img src="images/user.png" class="nav-icon"/></a>
+        <a href="account.html"><img src="images/users.png" class="nav-icon"/></a>
       </header>
       
       <div class="main-content">
         <div class="accounts-div">
           <h2> Accounts </h2>
           <div class="account">
-            <img src="images/netflix.png" />
+            <img src="images/netflix.png" class="acct-img"/>
             <div class="acct-description">
               <div class="button">
                 <a href="javascript:void(0);" class="orange"> Go to Netflix </a>
               </div>
               <p> <a href="javascript:void(0);" class="white"> View details </a></p>
             </div>
-          </div>
-          <div class="account">
-            <img src="images/spotify.jpg" />
-            <div class="acct-description">
-              <div class="button">
-                <a href="javascript:void(0);" class="orange"> Go to Spotify </a>
-              </div>
-              <p> <a href="javascript:void(0);" class="white"> View details </a></p>
-            </div>
-          </div>
-          <div class="account">
-            <img src="images/hulu.jpg" />
-            <div class="acct-description">
-              <div class="button">
-                <a href="javascript:void(0);" class="orange"> Go to Hulu </a>
-              </div>
-              <p> <a href="javascript:void(0);" class="white"> View details </a></p>
-            </div>
-          </div>
+          </div><!-- end account -->
 
-          <!-- <div class="account">
-            <img src="" />
+          <div class="account">
+            <img src="images/amazon.png" class="acct-img"/>
             <div class="acct-description">
               <div class="button">
-                <a href="javascript:void(0);" class="orange"> Go to Netflix </a>
-                <p> <a href="javascript:void(0);"> View details </a></p>
+                <a href="javascript:void(0);" class="orange"> Go to Amazon </a>
               </div>
+              <p> <a href="javascript:void(0);" class="white"> View details </a></p>
             </div>
+          </div><!-- end account -->
+
+          <div class="account">
+            <img src="images/nyt.png" class="acct-img"/>
+            <div class="acct-description">
+              <div class="button">
+                <a href="javascript:void(0);" class="orange"> Go to NY Times </a>
+              </div>
+              <p> <a href="javascript:void(0);" class="white"> View details </a></p>
+            </div>
+          </div><!-- end account -->
+          
+          <!-- Payment Information -->
+
+          <!-- <div class="payment">
+            <h2> My Payments </h2>
           </div> -->
+   
         </div> <!-- end .accounts -->
 
         <div class="usage">
@@ -75,15 +74,11 @@
               <h3> Current Balance </h3>
                 <div class="usage-label"> 
                   <p> Netflix </p>
-                  <p> Spotify </p>
-                  <p> Hulu </p>
-                  <p> Apple Music </p>
+
                 </div>
                 <div class="usage-price">
                   <p> $4.43</p>
-                  <p> $2.29</p>
-                  <p> $3.81</p>
-                  <p> $2.08</p>
+
                 </div>
             </div>
             <div class="summary-viz">
@@ -92,21 +87,21 @@
               <h3> Current Month Usage</h3>
                 <div class="usage-label"> 
                   <p> Netflix </p>
-                  <p> Spotify </p>
-                  <p> Hulu </p>
-                  <p> Apple Music </p>
+
                 </div>
                 <div class="usage-price">
                   <p> 6 hours</p>
-                  <p> 15 hours </p>
-                  <p> None </p>
-                  <p> 2 Hours </p>
+
                 </div>
             </div>
               <!-- <img src="images/data_viz.png" id="data_viz"> -->
             </div>
           </div>
 
+
+          <div class="group-usage">
+            <h2>My Usage</h2>
+                <div id="container"></div>
           <div class="group-usage" style="margin-bottom: 40px;">
           <h2>Group Usage</h2>
 
