@@ -37,8 +37,14 @@ Highcharts.chart('container', {
     chart: {
         type: 'line'
     },
+    credits: {
+        enabled: false
+    },
+    /*export: {
+        enabled: false
+    },*/
     title: {
-        text: 'Weekly Netflix Usage'
+        text: 'Hours of Netflix Used'
     },
     subtitle: {
         text: 'November 2017' 
